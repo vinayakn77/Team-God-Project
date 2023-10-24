@@ -11,7 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="GET IN"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Login"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -37,6 +38,7 @@
             android:id="@+id/username_getIn"
             android:layout_width="match_parent"
             android:layout_height="55dp"
+            android:fontFamily="@font/poppins_semibold"
             android:textColor="#5B5B5B"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -62,6 +64,7 @@
             android:id="@+id/otp_getIn"
             android:layout_width="match_parent"
             android:layout_height="55dp"
+            android:fontFamily="@font/poppins_semibold"
             android:textColor="#5B5B5B"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -73,6 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Didn't Receive OTP?"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -90,6 +94,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="44dp"
         android:background="#5E78D8"
+        android:fontFamily="@font/poppins_semibold"
         android:padding="4dp"
         android:text="Click Here"
         android:textColor="#040404"
@@ -99,20 +104,23 @@
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/txtOtp_getIn" />
 
+
     <Button
         android:id="@+id/submit_getIn"
-        android:layout_width="138dp"
-        android:layout_height="44dp"
+        android:layout_width="185dp"
+        android:layout_height="67dp"
         android:layout_marginBottom="200dp"
-        android:backgroundTint="#099226"
+        android:backgroundTint="#40C53B"
+        android:fontFamily="@font/poppins_semibold"
         android:text="SUBMIT"
+        android:textColor="#004D40"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtOtp_getIn"
-        app:layout_constraintVertical_bias="0.753" />
-
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/msg_getIn"
