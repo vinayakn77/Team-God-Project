@@ -21,10 +21,10 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="#40C53B"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="12dp"
@@ -42,16 +42,16 @@
             android:layout_marginRight="12dp"
             android:layout_weight="1"
             android:contentDescription="Home Link"
-            app:srcCompat="@drawable/home_icon" />
+            app:srcCompat="@drawable/home" />
 
         <ImageView
             android:id="@+id/exploreLink"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_marginRight="12dp"
             android:layout_weight="1"
+            android:background="#64DD17"
             android:contentDescription="Explore Link"
-            app:srcCompat="@drawable/search_icon2" />
+            app:srcCompat="@drawable/search" />
 
         <ImageView
             android:id="@+id/dashboardLink"
@@ -60,7 +60,7 @@
             android:layout_marginRight="12dp"
             android:layout_weight="1"
             android:contentDescription="Dashboard Link"
-            app:srcCompat="@drawable/dashboard_icon" />
+            app:srcCompat="@drawable/post" />
 
         <ImageView
             android:id="@+id/profileLink"
@@ -68,7 +68,7 @@
             android:layout_height="45dp"
             android:layout_weight="1"
             android:contentDescription="Profile Link"
-            app:srcCompat="@drawable/profile_icon" />
+            app:srcCompat="@drawable/user" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
