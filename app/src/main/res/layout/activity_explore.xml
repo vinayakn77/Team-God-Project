@@ -46,16 +46,15 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="#40C53B"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.975">
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
 
         <ImageView
             android:id="@+id/homeLink"
@@ -63,7 +62,6 @@
             android:layout_height="45dp"
             android:layout_marginRight="12dp"
             android:layout_weight="1"
-            android:background="#64DD17"
             android:contentDescription="Home Link"
             app:srcCompat="@drawable/home" />
 
@@ -72,7 +70,7 @@
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_weight="1"
-            android:background="#40C53B"
+            android:background="#64DD17"
             android:contentDescription="Explore Link"
             app:srcCompat="@drawable/search" />
 
@@ -98,12 +96,13 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="368dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974">
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.096">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -121,8 +120,8 @@
                     android:id="@+id/img_property_propertyItem"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    tools:src="@drawable/land_image" />
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/land_image" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -180,8 +179,8 @@
                     android:id="@+id/img_property_propertyItem2"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    tools:src="@drawable/land_image2" />
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/land_image2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -238,8 +237,8 @@
                     android:id="@+id/img_property_propertyItem3"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    tools:src="@drawable/land_image" />
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/land_image" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -296,8 +295,8 @@
                     android:id="@+id/img_property_propertyItem4"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    tools:src="@drawable/land_image2" />
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/land_image2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -363,32 +362,30 @@
         android:id="@+id/editTextText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:ems="10"
         android:fontFamily="@font/poppins_semibold"
         android:hint="Bangalore..."
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_results_homeActivity"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:background="#8BC34A"
         android:fontFamily="@font/poppins_regular"
         android:padding="10dp"
         android:text="Search Results"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3"
-        app:layout_constraintVertical_bias="0.487" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
 
     <ImageView
         android:id="@+id/imageView5"
