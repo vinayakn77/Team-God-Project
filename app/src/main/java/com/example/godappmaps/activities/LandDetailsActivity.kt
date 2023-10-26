@@ -5,39 +5,24 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.Toast
 import com.example.godappmaps.R
 
-class ExploreActivity : AppCompatActivity() {
+class LandDetailsActivity : AppCompatActivity() {
     private lateinit var homeLink: ImageView
     private lateinit var profileLink: ImageView
     private lateinit var dashboardLink: ImageView
 
+    private lateinit var getRent: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_explore)
+        setContentView(R.layout.activity_land_details)
 
         handleBar()
 
-        var button1: Button = findViewById(R.id.view_1)
-        var button2: Button = findViewById(R.id.view_2)
-        var button3: Button = findViewById(R.id.view_3)
-        var button4: Button = findViewById(R.id.view_4)
-
-        button1.setOnClickListener{
-            val intent = Intent(this, LandDetailsActivity:: class.java)
-            startActivity(intent)
-        }
-        button2.setOnClickListener{
-            val intent = Intent(this, LandDetailsActivity:: class.java)
-            startActivity(intent)
-        }
-        button3.setOnClickListener{
-            val intent = Intent(this, LandDetailsActivity:: class.java)
-            startActivity(intent)
-        }
-        button4.setOnClickListener{
-            val intent = Intent(this, LandDetailsActivity:: class.java)
-            startActivity(intent)
+        getRent = findViewById(R.id.get_landDetails)
+        getRent.setOnClickListener{
+            Toast.makeText(this, "Your request is put up to progress", Toast.LENGTH_LONG).show()
         }
     }
 
@@ -63,5 +48,4 @@ class ExploreActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
 }
